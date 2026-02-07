@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <script src="Js/index.js"></script>
+  <script src="Js/main.js"></script>
+  <link rel="icon" href="accets/icons/favicon.ico">
+  <title>Readify</title>
+</head>
+
+<body>
+
+  <!--navigetion bar-->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img class="logoimg" src="img/auto_stories_70dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" alt="logo" height="27%"
+          width="27%">
+        <a class="logoname" href="index.html">Readify</a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="books.html">Books</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+
+
+    </nav>
+  </header>
+
+
+  <!-- Hero Section -->
+  <main>
+
+    <div class="backgroundimg">
+      <img src="img/BN-Best-Books-of-the-Year.png" alt="backgroundimg">
+    </div>
+
+    <div class="welcome">
+      <h1 class="welcome1">Welcome to Readify</h1>
+      <p class="welcome2">Step into a world of stories, ideas, and imagination. Whether you’re a casual reader or a book
+        lover, Readify helps you explore books, stay motivated, and enjoy every page you read.</p>
+      <a href="books.html" class="cta-button">Explore More</a>
+    </div>
+
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1 id="quoteText">A reader lives a thousand lives.</h1>
+        <p id="quoteAuthor">– George R. R. Martin</p>
+      </div>
+      <div class="hero-image"></div>
+    </section>
+
+    <!-- AUTHOR OF THE DAY -->
+    <section class="author-day">
+      <div class="author-box">
+        <div class="line small"></div>
+
+        <h3><b>Author of the Day</b></h3>
+
+        <div class="line"></div>
+
+        <p id="authorName"></p>
+        <span id="authorDesc"></span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="flow.html">Reading Flow</a>
+      <a href="tracker.html">Tracker</a>
+    </div>
+
+    <div class="newsletter">
+      <h4>Join our Newsletter</h4>
+
+      <input type="email" id="newsletterEmail" placeholder="Enter your email">
+
+      <button onclick="saveNewsletterEmail()">
+        Subscribe
+      </button>
+
+      <p id="newsletterMsg"></p>
+    </div>
+
+    <p class="copyright">
+      &copy; 2026 Readify. All rights reserved.
+    </p>
+
+  </footer>
+</body>
+
+</html>
