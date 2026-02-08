@@ -1,4 +1,4 @@
-const cacheName = 'readify-v1';
+const cacheName = 'readify-v2';
 const assets = ['index.html', 'style.css', 'Js/main.js'];
 
 // Install the service worker
