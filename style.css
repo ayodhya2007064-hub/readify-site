@@ -25,7 +25,7 @@ main {
   min-height: calc(100vh - 160px);
 }
 
-/*.visually_hidden {
+.visually_hidden {
     position: absolute !important;
     width: 1px !important;
     height: 1px !important;
@@ -35,10 +35,6 @@ main {
     clip-path: inset(50%) !important;
     white-space: nowrap !important;
     border: 0 !important;
-} */
-
-.test-hidden {
-    display: none !important;
 }
 
 
@@ -1334,4 +1330,5 @@ textarea {
   .feedback-header h1 {
     font-size: 28px;
   }
+
 }
