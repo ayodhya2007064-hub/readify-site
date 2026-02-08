@@ -127,6 +127,10 @@ nav .logo {
   color: #D3DAD9;
 }
 
+.newsletter-title{
+  font-size: 16px;
+}
+
 .newsletter input {
   padding: 10px;
   border-radius: 6px;

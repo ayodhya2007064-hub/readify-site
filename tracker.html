@@ -18,8 +18,8 @@
   <header>
     <nav class="navbar">
       <div class="logo">
-        <img class="logoimg" src="img/auto_stories_70dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" alt="logo" height="27%"
-          width="27%">
+        <img class="logoimg" src="img/auto_stories_70dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" alt="logo" height="48"
+          width="48">
         <a class="logoname" href="index.html">Readify</a>
       </div>
 
@@ -56,22 +56,24 @@
 
       <div class="field">
         <label for="totalPages">Total pages</label>
-        <input id="totalPages" name="totalPages" type="number" min="1" inputmode="numeric" required />
+        <input id="totalPages" name="totalPages" type="number" min="1" inputmode="numeric" required>
       </div>
 
       <div class="field">
         <label for="pagesRead">Pages read so far</label>
-        <input id="pagesRead" name="pagesRead" type="number" min="0" inputmode="numeric" required />
+        <input id="pagesRead" name="pagesRead" type="number" min="0" inputmode="numeric" required>
       </div>
 
       <div class="field">
         <label for="speed">Reading speed (pages per day)</label>
-        <input id="speed" name="speed" type="number" min="0" step="0.1" inputmode="decimal" required />
+        <input id="speed" name="speed" type="number" min="0" step="0.1" inputmode="decimal" required>
       </div>
+
       <section class="results" aria-live="polite">
         <div class="progress-wrap">
           <div class="progress-label">
             <div>
+              <h2 class="visually-hidden">Reading Results</h2>
               <strong id="percentLabel">0%</strong>
               <div class="small" id="pagesLabel">0 / 0 pages</div>
             </div>
@@ -136,7 +138,7 @@
     </div>
 
     <div class="newsletter">
-      <h4>Join our Newsletter</h4>
+      <h3 class="newsletter-title">Join our Newsletter</h3>
 
       <input type="email" id="newsletterEmail" placeholder="Enter your email">
 
