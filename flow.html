@@ -18,7 +18,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img class="logoimg" src="img/auto_stories_70dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" alt="logo"
+                <img class="logoimg" src="img/auto_stories_70dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" alt="readify_logo"
                     height="48" width="48">
                 <a class="logoname" href="index.html">Readify</a>
             </div>
@@ -82,6 +82,7 @@
                     <span class="count" id="readingCount">0</span>
                     <p>Reading</p>
                 </div>
+
                 <div class="overview-item completed">
                     <span class="count" id="completedCount">0</span>
                     <p>Completed</p>
@@ -89,9 +90,13 @@
             </div>
 
             <div class="library-controls">
+                <label for="bookInput" class="visually-hidden">Book title</label>
+
                 <input type="text" class="bookInput" id="bookInput" list="bookSuggestions"
                     placeholder="Enter book title to start reading...">
+
                 <datalist id="bookSuggestions"></datalist>
+
                 <button class="b-save" onclick="addBookToFlow()">Add Book</button>
             </div>
 
@@ -112,6 +117,8 @@
 
         <div class="newsletter">
             <h3 class="newsletter-title">Join our Newsletter</h3>
+
+            <label for="newsletterEmail" class="visually-hidden">Email address</label>
 
             <input type="email" id="newsletterEmail" placeholder="Enter your email">
 

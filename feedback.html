@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img class="logoimg" src="img/auto_stories_70dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" alt="logo"
+                <img class="logoimg" src="img/auto_stories_70dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" alt="readify_logo"
                     height="48" width="48">
                 <a class="logoname" href="index.html">Readify</a>
             </div>
@@ -49,19 +49,20 @@
         <div class="feedback-grid">
             <section class="form-card">
                 <h2 class="visually-hidden">Information Form</h2>
+
                 <form id="feedbackForm">
                     <div class="input-row">
                         <div class="group">
-                            <label>Name</label>
+                            <label for="name">Name</label>
                             <input type="text" id="name" placeholder="Jane Doe" required>
                         </div>
                         <div class="group">
-                            <label>Email</label>
+                            <label for="email">Email</label>
                             <input type="email" id="email" placeholder="jane@example.com" required>
                         </div>
                     </div>
                     <div class="group">
-                        <label>Message</label>
+                        <label for="message">Message</label>
                         <textarea id="message" rows="5" placeholder="Tell us what's on your mind..."
                             required></textarea>
                     </div>
@@ -124,6 +125,8 @@
 
         <div class="newsletter">
             <h3 class="newsletter-title">Join our Newsletter</h3>
+
+            <label for="newsletterEmail" class="visually-hidden">Email address</label>
 
             <input type="email" id="newsletterEmail" placeholder="Enter your email">
 
