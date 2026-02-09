@@ -36,6 +36,11 @@ self.addEventListener('install', e => {
 
 // Fetch from cache
 self.addEventListener('fetch', e => {
+  if (e.request.url.match(/\.(jpg|jpeg|png|gif|mp3|wav|ogg)$/i)) {
+    return;
+  }
+  
+  
   e.respondWith(
     caches.match(e.request).then(res => {
       return res || fetch(e.request);
