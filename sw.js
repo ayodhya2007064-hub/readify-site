@@ -1,21 +1,26 @@
 const cacheName = 'readify-v2';
 const assets = [
-  'index.html',
-  'book.html',
-  'flow.html',
-  'tracker.html',
-  'recommender.html',
-  'feedback.html',
-
-  'style.css',
-  'Js/main.js'
+  './',
+  './index.html',
+  './books.html',
+  './flow.html', 
+  './tracker.html',
+  './recommender.html',
+  './feedback.html',
+  './style.css',
+  './Js/main.js',
+  './Js/index.js',
+  './img/BN-Best-Books-of-the-Year.png',
+  './img/0EfkvjCOb8HA-dKNR.jpg'
 ];
 
 /// Install service worker
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
-      return cache.addAll(assets);
+      return cache.addAll(assets).catch(err => {
+        console.log('Failed to cache:', err);
+      });
     })
   );
 });
