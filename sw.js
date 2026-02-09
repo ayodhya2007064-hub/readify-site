@@ -1,20 +1,30 @@
 const cacheName = 'readify-v2';
-const assets = ['index.html', 'style.css', 'Js/main.js'];
+const assets = [
+  'index.html',
+  'book-explorer.html',
+  'reading-flow.html',
+  'tracker.html',
+  'recommender.html',
+  'about.html',
 
-// Install the service worker
-self.addEventListener('install', (e) => {
+  'style.css',
+  'Js/main.js'
+];
+
+/// Install service worker
+self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open(cacheName).then((cache) => {
-      cache.addAll(assets);
+    caches.open(cacheName).then(cache => {
+      return cache.addAll(assets);
     })
   );
 });
 
-// Fetch files from cache if offline
-self.addEventListener('fetch', (e) => {
+// Fetch from cache
+self.addEventListener('fetch', e => {
   e.respondWith(
-    caches.match(e.request).then((response) => {
-      return response || fetch(e.request);
+    caches.match(e.request).then(res => {
+      return res || fetch(e.request);
     })
   );
 });
