@@ -10,6 +10,11 @@ const assets = [
   './style.css',
   './Js/main.js',
   './Js/index.js',
+  './Js/books.js',
+  './Js/feedback.js',
+  './Js/flow.js',
+  './Js/recommender.js',
+  './Js/tracker.js',
   './img/BN-Best-Books-of-the-Year.png',
   './img/0EfkvjCOb8HA-dKNR.jpg'
 ];
