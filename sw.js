@@ -1,11 +1,11 @@
 const cacheName = 'readify-v2';
 const assets = [
   'index.html',
-  'book-explorer.html',
-  'reading-flow.html',
+  'book.html',
+  'flow.html',
   'tracker.html',
   'recommender.html',
-  'about.html',
+  'feedback.html',
 
   'style.css',
   'Js/main.js'
