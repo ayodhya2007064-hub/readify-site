@@ -16,7 +16,11 @@ const assets = [
   './Js/recommender.js',
   './Js/tracker.js',
   './img/BN-Best-Books-of-the-Year.png',
-  './img/0EfkvjCOb8HA-dKNR.jpg'
+  './img/0EfkvjCOb8HA-dKNR.jpg',
+  './audio/JHAREE-Cane-Sugar.mp3',
+  './audio/YTDowncom_YouTube_Cozy-2-Minute-Fall-Timer-with-Relaxing-L_Media__X-3QhAOQZk_004_360p.mp3',
+  './audio/YTDowncom_YouTube_Lazy-Dolphin_Media_KFMvw7jSi6s_004_360p.mp3'
+  
 ];
 
 /// Install service worker
